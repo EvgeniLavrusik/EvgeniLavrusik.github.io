@@ -38,6 +38,7 @@
    display: flex;
    flex-wrap: wrap;
    justify-content:space-around;
+   z-index: 1;
  }
  nav>a{
    color: aliceblue;
@@ -342,7 +343,7 @@ nav>a:hover {
     .navigation{
       display: inline-block;
       transition: all 1s ease 0s;
-     z-index: 1;
+   
      max-width: 30%;
      position: fixed;
      left: 100%;
