@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evgeni Lavrusik</title>
+</head>
+<body>
+    <header class="header ">
+        <button class="toggle-hamburger">
+            <span></span>
+        </button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#about-me">About me</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+        </nav>
+        <div class="header-slider item1">
+            <span class="wrapper-img"><img src="./image/quY60FkWCko.jpg" alt=""></span>
+            <p class="header-welcome anim">Hi, my name Evgeni and I want to join the course</p>
+            <span class="name-course anim">"JS From Zero To Hero 2023"</span>
+            <a class="previous" onclick="previous_click"><img src="./image/white-arrow-70.png" alt=""></a>
+            <a class="next"><img src="./image/white-arrow-70.png" alt=""></a>
+            <div class="wrapper-social">
+                <a href="https://github.com/EvgeniLavrusik"> 
+                    <svg class="github social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                        <path
+                        d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/evgeni-lavrusik-4a2792218/"> 
+                    <svg class="linkedin social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                        <path fill="#0288d1" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"></path>
+                        <rect width="4" height="15" x="14" y="19" fill="#fff"></rect>
+                        <path fill="#fff" d="M16,17L16,17c-1.2,0-2-0.9-2-2c0-1.1,0.8-2,2-2c1.2,0,2,0.9,2,2C18,16.1,17.2,17,16,17z"></path>
+                        <path fill="#fff"
+                            d="M35,24.5c0-3-2.5-5.5-5.5-5.5c-1.9,0-3.5,0.9-4.5,2.3V19h-4v15h4v-8c0-1.7,1.3-3,3-3s3,1.3,3,3v8h4	C35,34,35,24.9,35,24.5z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://t.me/e_lavrusik">
+                    <svg class="telegram social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                        <path fill="#29b6f6" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"></path>
+                        <path fill="#fff"
+                            d="M34,15l-3.7,19.1c0,0-0.2,0.9-1.2,0.9c-0.6,0-0.9-0.3-0.9-0.3L20,28l-4-2l-5.1-1.4c0,0-0.9-0.3-0.9-1	c0-0.6,0.9-0.9,0.9-0.9l21.3-8.5c0,0,0.7-0.2,1.1-0.2c0.3,0,0.6,0.1,0.6,0.5C34,14.8,34,15,34,15z">
+                        </path>
+                        <path fill="#b0bec5" d="M23,30.5l-3.4,3.4c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0l1-6L23,30.5z"></path>
+                        <path fill="#cfd8dc"
+                            d="M29.9,18.2c-0.2-0.2-0.5-0.3-0.7-0.1L16,26c0,0,2.1,5.9,2.4,6.9c0.3,1,0.6,1,0.6,1l1-6l9.8-9.1	C30,18.7,30.1,18.4,29.9,18.2z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="mailto:e.lavrusik22@gmail.com">
+                    <svg class="gmail social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 40 40">
+                        <path fill="#dff0fe"
+                            d="M4,34.5c-1.378,0-2.5-1.122-2.5-2.5V9c0-1.378,1.122-2.5,2.5-2.5h32c1.378,0,2.5,1.122,2.5,2.5v23 c0,1.378-1.122,2.5-2.5,2.5H4z">
+                        </path>
+                        <path fill="#4788c7"
+                            d="M36,7c1.103,0,2,0.897,2,2v23c0,1.103-0.897,2-2,2H4c-1.103,0-2-0.897-2-2V9c0-1.103,0.897-2,2-2H36 M36,6H4C2.343,6,1,7.343,1,9v23c0,1.657,1.343,3,3,3h32c1.657,0,3-1.343,3-3V9C39,7.343,37.657,6,36,6L36,6z">
+                        </path>
+                        <path fill="#b6dcfe" d="M38,32V9c0-1.105-0.895-2-2-2H4C2.895,7,2,7.895,2,9l18.772,25H36C37.105,34,38,33.105,38,32z">
+                        </path>
+                        <path fill="#fff" d="M38,32V10.715L5,34h31C36.748,34,38,33.205,38,32z"></path>
+                        <path fill="#dff0fe" d="M20.772,34H36c1.105,0,2-0.895,2-2V10.715l-22.69,16.01L20.772,34z"></path>
+                        <path fill="#98ccfd" d="M4,34.5c-1.378,0-2.5-1.122-2.5-2.5V9.5h3v25H4z"></path>
+                        <path fill="#4788c7" d="M4,10v24c-1.103,0-2-0.897-2-2V10H4 M5,9H1v1v22c0,1.657,1.343,3,3,3h1V9L5,9z"></path>
+                        <path fill="#98ccfd" d="M35.5,34.5v-25h3V32c0,1.378-1.122,2.5-2.5,2.5H35.5z"></path>
+                        <path fill="#4788c7" d="M38,10v22c0,1.103-0.897,2-2,2V10H38 M39,9h-4v26h1c1.657,0,3-1.343,3-3V9L39,9z"></path>
+                        <path fill="#fff"
+                            d="M2.6,10.564c-0.288-0.201-1.1-0.91-1.1-1.542C1.5,7.622,2.622,6.5,4,6.5h32 c1.378,0,2.5,1.122,2.5,2.5c0,0.654-0.812,1.364-1.097,1.563L20,22.881L2.6,10.564z">
+                        </path>
+                        <path fill="#4788c7"
+                            d="M36,7c1.103,0,2,0.897,2,2.024c0,0.326-0.523,0.876-0.889,1.134L20,22.269L2.884,10.153 C2.523,9.898,2,9.349,2,9c0-1.103,0.897-2,2-2h16H36 M36,6H20H4C2.343,6,1,7.343,1,9v0.023c0,1.042,1.311,1.95,1.311,1.95 L20,23.494l17.689-12.52c0,0,1.311-0.909,1.311-1.95V9C39,7.343,37.657,6,36,6L36,6z">
+                        </path>
+                        <g>
+                            <path fill="#98ccfd"
+                                d="M2.6,10.564c-0.109-0.081-0.227-0.173-0.364-0.3c-0.261-0.243-0.465-0.497-0.589-0.731 C1.549,9.349,1.5,9.178,1.5,9.022c0-0.986,0.569-1.864,1.438-2.273L20,18.827L37.063,6.75C37.932,7.159,38.5,8.035,38.5,9 c0,0.101-0.012,0.183-0.037,0.269c-0.164,0.568-0.821,1.127-1.06,1.295L20,22.881L2.6,10.564z">
+                            </path>
+                            <path fill="#4788c7"
+                                d="M2.905,7.339L19.422,19.03L20,19.439l0.578-0.409L37.095,7.34C37.65,7.704,38,8.329,38,9.024 c0,0.03-0.006,0.066-0.017,0.106c-0.113,0.391-0.633,0.86-0.871,1.028L20,22.269L2.855,10.132C2.8,10.09,2.697,10.01,2.578,9.899 c-0.221-0.206-0.39-0.414-0.49-0.601C2.031,9.191,2,9.093,2,9C2,8.324,2.35,7.703,2.905,7.339 M3.003,6.183 C1.839,6.595,1,7.695,1,9v0.023c0,0.26,0.082,0.513,0.205,0.744c0.184,0.347,0.461,0.649,0.691,0.864 c0.154,0.143,0.287,0.248,0.358,0.301c0.036,0.027,0.056,0.041,0.056,0.041L20,23.494l17.689-12.52c0,0,1.004-0.696,1.255-1.568 C38.979,9.282,39,9.154,39,9.024V9c0-1.305-0.838-2.404-2.002-2.817L20,18.214L3.003,6.183L3.003,6.183z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section id="about-me" class="about-me">
+            <div class="wrapper wrapper-aboutme">
+                <h3>About me</h3>
+                <span class="basic-info anim">
+                    <h4>Basic information</h4>
+                    <p>Age: 25</p>
+                    <p>Email: e.lavrusik22@gmail.com</p>
+                    <p>Phone: +375292068302</p>
+                    <p>Town: Minsk</p>
+                    <p>Language: Russian,English(B1)</p>
+                </span>
+                <span class="aboutme anim">
+                    <h4>About</h4>
+                    <p class="text-aboutme">Hello, my name is Evgeni Lavrusik. I am a junior front end developer and i really like to progress in the front end, 
+                    so I would like to join the course "JS From Zero To Hero 2023". For me, this is a good opportunity to gain additional knowledge 
+                    in the field of front end, to gain development experience. My goal is to find a job as a frontend developer and develop to become a cool specialist. 
+                    </p>
+                </span>
+            </div>
+        </section>
+        <section id="experience" class="experience">
+            <div class="wrapper-experience wrapper">
+                <h3 class="headline">Experience</h3>
+                <article class="exp1 anim">
+                    <h4>FrontEnd developer(graduate) - TeachMeSkills</h4>
+                    <p>19 july 2021 - 28 march 2022</p>
+                    <h5>Skills:</h5>
+                    <ul>
+                        <li>HTML5, CSS, SASS, Styled-components</li>
+                        <li>BEM,semantic layout</li>
+                        <li>JavaScript</li>
+                        <li>Redux, Redux-thunk, Redux-saga</li>
+                        <li>TypeScript</li>
+                        <li>Jest</li>
+                    </ul>
+                    <h5>Achievement:</h5>
+                    <p>Wrote a graduation project - component editor using Typescript, Redux</p>
+                </article>
+                <article class="exp2 anim">
+                    <h4>Automation engineer - SCKK</h4>
+                    <p>21 february 2019 - until now</p>
+                    <h5>Skills:</h5>
+                    <ul>
+                        <li>PLC programming</li>
+                        <li>Setting control loops</li>
+                        <li>Engineering,configuration and maintenance system of automatic control</li>
+                        <li>Selection of equipment configuration</li>
+                    </ul>
+                    <h5>Achievements:</h5>
+                    <ul>
+                        <li>Optimisation constol system wood chip digester </li>
+                        <li>Optimisation constol system washing drum</li>
+                        <li>Setting up the detection system quality indicators of the produced products</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="education" class="education">
+            <div class="wrapper wrapper-education">
+                <h3>Education</h3>
+                <article>
+                    <p>TeachMeSkills (july 2021 - march 2022)
+                        <p>FrontEnd developer</p>
+                        <p> During the course, I learned the basics of Javascript, got acquainted with React, Redux, Typescript. as a result of
+                        the course, was written a small project - a component editor, which can be found on my Gtihub.
+                        </p>
+                    </p>
+                </article>
+                <article>
+                    <p>Belarusian State Technological University (2014-2019)
+                        <p>Automation engineer</p>
+                    </p>
+                </article>
+            </div>
+        </section> 
+    </main>
+    <footer class="footer ">
+        <p>Created by Evgeni Lavrusik</p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
