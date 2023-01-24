@@ -261,7 +261,7 @@ nav>a:hover {
 .toggle-hamburger {
    position: fixed;
    background-color: rgba(0, 0, 0, 0);
-   left: 80%;
+   right: 5%;
    color: #ccc;
    display: none;
    z-index: 2;
@@ -362,30 +362,18 @@ nav>a:hover {
     .navigation{
       display: inline-block;
       transition: all 1s ease 0s;
-      max-width: 30%;
+      max-width: 49%;
       position: fixed;
       left: 100%;
     }
     .navigation>a{
       display: block;
       text-align: center;
-      margin:10px 50px 20px 20px;
-      
+      margin:10px;
     }
    .navigation>a:first-child{
       margin-top: 80px;
    }
-    .menu{
-      display: block;
-      position: fixed;
-      left: 86%;
-      top: 3%;
-      z-index: 2;
-      transition: all 1s ease 0s;
-    }
-    .menu:hover{
-      cursor: pointer;
-    }
     .navigation-activ{
       transform: translate(-100%,0);
       transition: all 1s ease 0s;
