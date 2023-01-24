@@ -40,6 +40,9 @@
    justify-content:space-around;
    z-index: 1;
  }
+ .anim{
+   visibility: hidden;
+ }
  nav>a{
    color: aliceblue;
    font-size: 25px;
@@ -87,6 +90,7 @@ article>h4{
    padding-left: 20px;
 }
 .wrapper-experience{
+   overflow: hidden;
    display: grid;
    grid-template-columns: 50% 50%;
    grid-template-areas: "headline headline" "exp1 exp2";
@@ -100,16 +104,22 @@ article>h4{
    padding: 20px;
 }
 .exp1{
-   transform: translate(-120%,0);
+   transform: translate(-100%,0);
    grid-area: exp1;
+   visibility: hidden;
+   
 }
 .exp1,.exp2{
    opacity: 0;
    transition: all 1s ease-in 0s;
+   
 }
 .exp2 {
-   transform: translate(120%, 0);
+   transform: translate(100%, 0);
    grid-area: exp2;
+visibility: hidden;
+position: relative;
+
 }
 section{
    margin: 40px 0;
@@ -200,23 +210,23 @@ h4{
 .previous{
    position: absolute;
    top: 45%;
-   right: 95%;
+   left: 5%;
    font-size: 40px;
    transition: all 1s ease 0s;
 }
 .next {
    position: absolute;
    top: 45%;
-   left: 95%;
+   right: 5%;
    font-size: 40px;
    transition: all 1s ease 0s;
 }
 .wrapper-education>article{
-   padding: 10px 20px 30px 40px;
+   padding: 20px;
    text-align: center;
    border: 2px solid gray;
    border-radius: 20px;
-   margin: 20px 50px 20px 50px;
+   margin: 20px 50px ;
 }
 .wrapper-education>article>p:nth-child(2){
    color:gray;
@@ -292,26 +302,20 @@ nav>a:hover {
 .toggle-hamburger span {
    transition: background 0s 0.3s;
 }
-
 .toggle-hamburger span::before,
 .toggle-hamburger span::after {
    transition-duration: 0.3s, 0.3s;
    transition-delay: 0.3s, 0s;
 }
-
 .toggle-hamburger span::before {
    transition-property: top, transform;
 }
-
 .toggle-hamburger span::after {
    transition-property: bottom, transform;
 }
-
-
 .toggle-hamburger.is-active span {
    background: none;
 }
-
 .toggle-hamburger.is-active span::before,
 .toggle-hamburger.is-active span::after {
    background-color: #b8b8b8;
@@ -327,26 +331,40 @@ nav>a:hover {
 }
 
 
-
-
-
-
-
  @media (max-width:840px) {
     .wrapper-experience,.wrapper-aboutme,.wrapper-education {
       display: block;
       max-width: 80%;
     }
+    .header-welcome{
+      font-size:25px ;
+    }
+    .name-course{
+      font-size: 35px;
+    }
+    .aboutme,.basic-info{
+      padding: 0 40px 20px 20px;
+    }
     .toggle-hamburger{
       display: block;
     }
+    .wrapper-experience>article{
+     margin: 2%;
+     padding: 10px;
+    }
+    .wrapper{
+      padding: 10px;
+    }
+    .wrapper-education>article{
+      padding: 10px;
+      margin: 10px 20px;
+      }
     .navigation{
       display: inline-block;
       transition: all 1s ease 0s;
-   
-     max-width: 30%;
-     position: fixed;
-     left: 100%;
+      max-width: 30%;
+      position: fixed;
+      left: 100%;
     }
     .navigation>a{
       display: block;
@@ -354,13 +372,13 @@ nav>a:hover {
       margin:10px 50px 20px 20px;
       
     }
-       .navigation>a:first-child{
-         margin-top: 80px;
-       }
+   .navigation>a:first-child{
+      margin-top: 80px;
+   }
     .menu{
       display: block;
       position: fixed;
-      left: 82%;
+      left: 86%;
       top: 3%;
       z-index: 2;
       transition: all 1s ease 0s;
@@ -369,11 +387,13 @@ nav>a:hover {
       cursor: pointer;
     }
     .navigation-activ{
-transform: translate(-100%,0);
-transition: all 1s ease 0s;
+      transform: translate(-100%,0);
+      transition: all 1s ease 0s;
     }
  }
 .active {
    transform: translate(0, 0);
    opacity: 1;
+   visibility: visible;
+
 }
